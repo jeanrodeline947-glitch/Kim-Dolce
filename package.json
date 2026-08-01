@@ -1,0 +1,25 @@
+{
+  "name": "kim-bot",
+  "version": "2.0.0",
+  "description": "KIM-BOT - WhatsApp Bot with Web Dashboard",
+  "main": "bot/index.js",
+  "scripts": {
+    "start": "node bot/index.js",
+    "dev": "node --watch bot/index.js"
+  },
+  "keywords": [
+    "kim-bot",
+    "whatsapp",
+    "bot",
+    "dashboard"
+  ],
+  "author": "KIM DOLCE",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "pino": "latest",
+    "qrcode-terminal": "latest"
+  }
+}
