@@ -1,25 +1,80 @@
 "use strict";
 
+/*
+=========================================================
+🤖 KIM-BOT — CONFIGURATION
+=========================================================
+*/
+
 module.exports = {
+
+  /* =========================
+     BOT INFORMATION
+  ========================== */
+
   botName: "KIM-BOT",
-  ownerName: "KIM DOLCE",
-  prefix: ".",
 
   version: "2.0.0",
 
-  // Website
-  website: {
-    enabled: true,
-    port: 3000
-  },
+  ownerName: "KIM DOLCE",
 
-  // WhatsApp session
+
+  /* =========================
+     COMMAND SETTINGS
+  ========================== */
+
+  prefix: ".",
+
+  commandMode: "prefix",
+
+
+  /* =========================
+     SESSION
+  ========================== */
+
   sessionFolder: "session",
 
-  // Bot settings
-  settings: {
-    autoRead: false,
-    autoTyping: false,
-    antiSpam: true
-  }
+
+  /* =========================
+     WEBSITE
+  ========================== */
+
+  websiteName: "KIM-BOT",
+
+  websiteUrl: "",
+
+
+  /* =========================
+     BOT SETTINGS
+  ========================== */
+
+  autoReconnect: true,
+
+  showCommandErrors: true,
+
+  logCommands: true,
+
+
+  /* =========================
+     SECURITY
+  ========================== */
+
+  ownerOnlyCommands: [
+    "setprefix",
+    "setname",
+    "setbio",
+    "restart",
+    "shutdown",
+    "broadcast",
+    "block",
+    "unblock",
+    "join",
+    "leave",
+    "groups",
+    "sessions",
+    "logs",
+    "clearcache",
+    "maintenance"
+  ]
+
 };
