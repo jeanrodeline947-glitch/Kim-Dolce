@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>KIM-BOT — Commands</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      🤖 KIM<span>-BOT</span>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+
+  <main class="commands-page">
+
+    <section class="dashboard-header">
+
+      <span class="badge">
+        COMMAND CENTER
+      </span>
+
+      <h1>
+        KIM-BOT Commands
+      </h1>
+
+      <p>
+        Browse the commands available in KIM-BOT.
+      </p>
+
+    </section>
+
+
+    <section class="command-tools">
+
+      <input
+        type="search"
+        id="commandSearch"
+        placeholder="🔎 Search commands..."
+        autocomplete="off"
+      >
+
+      <select id="categoryFilter">
+
+        <option value="all">
+          All Categories
+        </option>
+
+        <option value="General">
+          General
+        </option>
+
+        <option value="Group">
+          Group
+        </option>
+
+        <option value="Moderation">
+          Moderation
+        </option>
+
+        <option value="Protection">
+          Protection
+        </option>
+
+        <option value="Automation">
+          Automation
+        </option>
+
+        <option value="Media">
+          Media
+        </option>
+
+        <option value="Contacts">
+          Contacts
+        </option>
+
+        <option value="Fun">
+          Fun
+        </option>
+
+        <option value="Utility">
+          Utility
+        </option>
+
+        <option value="Download">
+          Download
+        </option>
+
+        <option value="Owner">
+          Owner
+        </option>
+
+        <option value="AI">
+          AI
+        </option>
+
+      </select>
+
+    </section>
+
+
+    <section
+      id="commandsList"
+      class="commands-grid"
+    >
+
+      <div
+        class="command-card"
+        data-category="General"
+      >
+        <span class="command-name">
+          .menu
+        </span>
+
+        <h3>
+          Menu
+        </h3>
+
+        <p>
+          Show all available commands.
+        </p>
+
+        <span class="command-category">
+          General
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="General"
+      >
+        <span class="command-name">
+          .ping
+        </span>
+
+        <h3>
+          Ping
+        </h3>
+
+        <p>
+          Check the bot response.
+        </p>
+
+        <span class="command-category">
+          General
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="General"
+      >
+        <span class="command-name">
+          .alive
+        </span>
+
+        <h3>
+          Alive
+        </h3>
+
+        <p>
+          Check if KIM-BOT is online.
+        </p>
+
+        <span class="command-category">
+          General
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="General"
+      >
+        <span class="command-name">
+          .botinfo
+        </span>
+
+        <h3>
+          Bot Info
+        </h3>
+
+        <p>
+          Display KIM-BOT information.
+        </p>
+
+        <span class="command-category">
+          General
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="Group"
+      >
+        <span class="command-name">
+          .groupinfo
+        </span>
+
+        <h3>
+          Group Info
+        </h3>
+
+        <p>
+          Display group information.
+        </p>
+
+        <span class="command-category">
+          Group
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="Group"
+      >
+        <span class="command-name">
+          .admins
+        </span>
+
+        <h3>
+          Admins
+        </h3>
+
+        <p>
+          List group administrators.
+        </p>
+
+        <span class="command-category">
+          Group
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="Media"
+      >
+        <span class="command-name">
+          .sticker
+        </span>
+
+        <h3>
+          Sticker
+        </h3>
+
+        <p>
+          Create a sticker from supported media.
+        </p>
+
+        <span class="command-category">
+          Media
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="Fun"
+      >
+        <span class="command-name">
+          .joke
+        </span>
+
+        <h3>
+          Joke
+        </h3>
+
+        <p>
+          Generate a random joke.
+        </p>
+
+        <span class="command-category">
+          Fun
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="Utility"
+      >
+        <span class="command-name">
+          .calc
+        </span>
+
+        <h3>
+          Calculator
+        </h3>
+
+        <p>
+          Calculate a mathematical expression.
+        </p>
+
+        <span class="command-category">
+          Utility
+        </span>
+      </div>
+
+
+      <div
+        class="command-card"
+        data-category="AI"
+      >
+        <span class="command-name">
+          .ai
+        </span>
+
+        <h3>
+          AI Assistant
+        </h3>
+
+        <p>
+          AI assistant integration.
+        </p>
+
+        <span class="command-category">
+          AI
+        </span>
+      </div>
+
+    </section>
+
+
+    <p
+      id="noResults"
+      class="no-results"
+      hidden
+    >
+      😕 No commands found.
+    </p>
+
+  </main>
+
+
+  <footer>
+    © <span id="year"></span>
+    KIM-BOT — KIM DOLCE
+  </footer>
+
+
+  <script src="script.js"></script>
+
+
+  <script>
+    "use strict";
+
+    const search =
+      document.getElementById("commandSearch");
+
+    const filter =
+      document.getElementById("categoryFilter");
+
+    const cards =
+      document.querySelectorAll(".command-card");
+
+    const noResults =
+      document.getElementById("noResults");
+
+
+    function filterCommands() {
+
+      const searchValue =
+        search.value.toLowerCase().trim();
+
+      const category =
+        filter.value;
+
+      let visible = 0;
+
+
+      cards.forEach((card) => {
+
+        const text =
+          card.textContent.toLowerCase();
+
+        const cardCategory =
+          card.dataset.category;
+
+        const matchesSearch =
+          text.includes(searchValue);
+
+        const matchesCategory =
+          category === "all" ||
+          cardCategory === category;
+
+
+        if (
+          matchesSearch &&
+          matchesCategory
+        ) {
+
+          card.style.display = "";
+
+          visible++;
+
+        } else {
+
+          card.style.display = "none";
+
+        }
+
+      });
+
+
+      noResults.hidden = visible !== 0;
+    }
+
+
+    search.addEventListener(
+      "input",
+      filterCommands
+    );
+
+    filter.addEventListener(
+      "change",
+      filterCommands
+    );
+  </script>
+
+</body>
+</html>
